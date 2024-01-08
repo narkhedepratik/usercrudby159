@@ -1,5 +1,7 @@
 package com.cjc.main.serviceimpl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +19,12 @@ public class Userserviceimpl implements userService{
 	public void saveData(User u) {
 		
 		ur.save(u);
+	}
+	
+	@Override
+	public List<User> getAllproducts() {
+
+		return (List<User>) ur.findAll();
 	}
 
 }
