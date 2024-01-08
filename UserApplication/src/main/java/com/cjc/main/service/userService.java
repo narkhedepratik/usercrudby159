@@ -6,4 +6,15 @@ public interface userService {
 
 	public void saveData(User u);
 
+
+
+
+
+
+
+
+	public User searchUserbyemail(String email);
+
+
+	
 }

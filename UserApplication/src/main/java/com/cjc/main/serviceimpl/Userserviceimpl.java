@@ -19,4 +19,14 @@ public class Userserviceimpl implements userService{
 		ur.save(u);
 	}
 
+
+	@Override
+	public User searchUserbyemail(String email) {
+		// TODO Auto-generated method stub
+		return ur.findByEmail(email);
+	}
+
+
+
+	
 }
