@@ -19,4 +19,13 @@ public class Userserviceimpl implements userService{
 		ur.save(u);
 	}
 
+	@Override
+	public User getSingleData(int userid) {
+		// TODO Auto-generated method stub
+		User u = ur.getUserById(userid);
+		return u;
+	}
+
+	
+
 }

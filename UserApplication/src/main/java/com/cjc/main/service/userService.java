@@ -6,4 +6,8 @@ public interface userService {
 
 	public void saveData(User u);
 
+	public User getSingleData(int userid);
+
+	
+
 }
