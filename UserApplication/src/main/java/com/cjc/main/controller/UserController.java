@@ -30,7 +30,6 @@ public class UserController {
 	}
 
 	 
-	 
 	 @GetMapping("/searchbyemail/{email}")
 	    public ResponseEntity<User> searchUserbyemail(@PathVariable String email){
 	   
@@ -44,6 +43,17 @@ public class UserController {
 	{
 	 List<User> products=userservice.getAllproducts();
 	 return new ResponseEntity<List<User>>(products,HttpStatus.OK);
+	}
+
+	
+	@GetMapping("user/{userid}")
+	public User getSingleUser(@PathVariable("userid") int userid)
+	{
+		User u = userservice.getSingleData(userid);
+		
+		
+		return u;
+		
 	}
 
 }

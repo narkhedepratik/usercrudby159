@@ -12,4 +12,8 @@ public interface userService {
 
 	public List<User> getAllproducts();
 
+	public User getSingleData(int userid);
+
+
+
 }
