@@ -5,5 +5,6 @@ import com.cjc.main.model.User;
 public interface userService {
 
 	public void saveData(User u);
+	public void deletedata(int id);
 
 }

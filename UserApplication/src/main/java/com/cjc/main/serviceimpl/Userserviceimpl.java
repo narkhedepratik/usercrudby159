@@ -19,4 +19,10 @@ public class Userserviceimpl implements userService{
 		ur.save(u);
 	}
 
+	@Override
+	public void deletedata( int id) {
+
+		ur.deleteById(id);
+	}
+
 }
